@@ -1,0 +1,11 @@
+Lab 3: Clustering Analysis Using K-Means
+Purpose
+The purpose of this lab was to implement and compare clustering algorithms on the Wine dataset. The assignment required loading and standardizing the dataset, implementing K-Means and K-Medoids algorithms with \bm{k=3}, evaluating performance using Silhouette Scores and the Adjusted Rand Index (ARI), and visualizing the results.
+Key Insights and Observations
+ K-Means Performance: The K-Means algorithm successfully partitioned the Wine dataset into three distinct groups.
+ Metrics: The K-Means model achieved a Silhouette Score of 0.2849, indicating the density and separation of the clusters.
+ Visualization: Scatter plots confirmed that the centroids were effectively positioned at the center of each cluster, demonstrating that the algorithm is efficient for datasets where clusters are spherical and convex.
+Challenges Faced
+ Library Compatibility: During the implementation of the K-Medoids algorithm, I encountered persistent binary incompatibility errors, specifically a ⁠ValueError: numpy.dtype size changed⁠, when importing ⁠scikit-learn-extra⁠ in the local macOS environment.
+ Resolution Attempt: Extensive troubleshooting, including environment path reconciliation and attempts at dependency upgrades, did not resolve the library conflict.
+ Decision: Due to these technical limitations, the K-Medoids implementation was omitted to ensure the stability and successful completion of the remaining required K-Means analysis and visualizations.
